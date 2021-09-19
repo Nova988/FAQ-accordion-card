@@ -6,4 +6,20 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+
+  .faq-card {
+    background: #fff;
+    display: flex;
+    gap: 2rem;
+    .illustration {
+      position: relative;
+      background: url("../images/bg-pattern-desktop.svg") no-repeat center
+        center/cover;
+
+      &-box {
+        position: absolute;
+        left: 0;
+      }
+    }
+  }
 }
