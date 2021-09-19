@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: linear-gradient($softViolet, $softBlue) no-repeat center
+    center/cover;
+  font-size: 12px;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+  color: $veryDarkGrayishBlue;
+  line-height: 1.4;
+  min-height: 100vh;
+}
+
+h1 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+img {
+  width: 100%;
+}
+
+// utilitys
+.container {
+  max-width: $containerWidth;
+  min-height: 100%;
+  margin: auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.py1 {
+  padding: 1rem 0;
+}
+.py2 {
+  padding: 2rem 0;
+}
+.py3 {
+  padding: 3rem 0;
+}
+.py4 {
+  padding: 4rem 0;
+}
+
+.px1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.px2 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.px3 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.px4 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
