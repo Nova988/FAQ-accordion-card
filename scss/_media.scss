@@ -1,2 +1,44 @@
 @media screen and (max-width: 500px) {
+  img {
+    max-width: 100%;
+  }
+  .container {
+    max-width: $mobileWidth;
+  }
+  #main-section {
+    .faq-card {
+      flex-direction: column;
+
+      .illustration {
+        background: url("../images/bg-pattern-mobile.svg") no-repeat top center;
+        padding-top: 0;
+
+        .main-illustration {
+          overflow: visible;
+
+          img {
+            max-width: 75%;
+            left: 50px;
+            top: -130px;
+          }
+        }
+      }
+
+      .question-content {
+        min-width: 1px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0 1rem;
+
+        .questions-container {
+          padding: 0 1rem;
+          .question-answer-wrap {
+            // min-width: 300px;
+          }
+        }
+      }
+    }
+  }
 }

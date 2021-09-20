@@ -11,15 +11,76 @@
     background: #fff;
     display: flex;
     gap: 2rem;
+    max-width: 1000px;
+    border-radius: 2rem;
+
+    //illustration
     .illustration {
       position: relative;
-      background: url("../images/bg-pattern-desktop.svg") no-repeat center
-        center/cover;
+      background: url("../images/bg-pattern-desktop.svg") no-repeat top -50px left -225px/125%;
+      padding: 5rem 0;
+
+      .main-illustration {
+        overflow: hidden;
+
+        img {
+          position: relative;
+          left: -100px;
+        }
+      }
 
       &-box {
         position: absolute;
-        left: 0;
+        left: -93px;
+        top: 200px;
+      }
+    }
+    //question Content
+    .question-content {
+      padding-top: 5rem;
+      min-width: 500px;
+
+      .questions-container {
+        max-width: 75%;
+
+        .question-answer-wrap {
+          border-bottom: 1px solid $lightGrayishBlue;
+          padding-bottom: 1rem;
+          .question {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 1rem;
+            font-size: 1.1rem;
+            color: $veryDarkGrayishBlue;
+
+            &:hover {
+              cursor: pointer;
+              color: $softRed;
+            }
+          }
+          .answer {
+            padding-top: 0.5rem;
+            color: $darkGrayishBlue;
+            max-width: 500px;
+          }
+        }
       }
     }
   }
 }
+
+// Js classes
+.hide {
+  display: none;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.active {
+  font-weight: 700;
+  color: $veryDarkBlue;
+}
+
+@import "media";
